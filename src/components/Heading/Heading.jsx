@@ -1,7 +1,15 @@
-import React from "react";
+import clsx from "clsx";
+import styles from "./Heading.module.css";
 
-const Heading = () => {
-  return <div>Heading</div>;
+export const Heading = ({ title, top, bottom }) => {
+  return (
+    <h2
+      className={clsx(styles.title, {
+        [styles.top]: top,
+        [styles.bottom]: bottom,
+      })}
+    >
+      {title}
+    </h2>
+  );
 };
-
-export default Heading;

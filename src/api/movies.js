@@ -10,9 +10,19 @@ axios.defaults.headers = {
   accept: "application/json",
 };
 
+// export const fetchTrendMovies = async () => {
+//   const response = await axios.get(API_PATH.trend, {});
+//   return response.data;
+// };
+
 export const fetchTrendMovies = async () => {
-  const response = await axios.get(API_PATH.trend, {});
-  return response.data;
+  try {
+    const response = await axios.get(API_PATH.trend, {});
+    return response.data;
+  } catch (error) {
+    console.error("Error fetching trending movies:", error);
+    throw error;
+  }
 };
 
 export const fetchSearchMovie = async (query, page = 1) => {
