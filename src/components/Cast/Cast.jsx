@@ -29,8 +29,8 @@ const Cast = () => {
       } finally {
         setIsLoadind(false);
       }
-      handleMovieCredits();
     };
+    handleMovieCredits();
   }, [movieId]);
 
   return (
