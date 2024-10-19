@@ -1,7 +1,7 @@
-import React from "react";
+import styles from "./NoFoundMessage.module.css";
 
-const NoFoundMessage = () => {
-  return <div>NoFoundMessage</div>;
+const NoFoundMessage = ({ text }) => {
+  return <div className={styles.noResult}>{text}</div>;
 };
 
 export default NoFoundMessage;

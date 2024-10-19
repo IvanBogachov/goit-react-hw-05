@@ -1,7 +1,7 @@
 import { DEFAULT_IMG_URL } from "/src/constants/api.js";
-import { IMG_URL } from "/src/constants/api";
-import { DEFAULT_TITLE } from "/src/constants/api";
-import { DEFAULT_DATE } from "/src/constants/api";
+import { IMG_URL } from "/src/constants/api.js";
+import { DEFAULT_TITLE } from "/src/constants/api.js";
+import { DEFAULT_DATE } from "/src/constants/api.js";
 import styles from "./MovieCard.module.css";
 
 const MovieCard = ({ data: { poster_path, title, release_date } }) => {
