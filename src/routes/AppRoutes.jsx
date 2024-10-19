@@ -5,7 +5,7 @@ import Reviews from "../components/Reviews/Reviews.jsx";
 import Loader from "../components/Loader/Loader.jsx";
 
 const HomePage = lazy(() => import("../pages/HomePage/HomePage.jsx"));
-const MoviesPage = lazy(() => import("../pages/MoviePage/MoviePage.jsx"));
+const MoviesPage = lazy(() => import("../pages/MoviesPage/MoviesPage.jsx"));
 const MovieDetailsPage = lazy(() =>
   import("../pages/MovieDetailsPage/MovieDetailsPage.jsx")
 );
