@@ -1,11 +1,10 @@
 import axios from "axios";
-import { API_PATH } from "constants/api";
+import { API_PATH } from "../constants/api";
 
 const ACCESS_KEY =
-  "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJkYTFjMDhjYzBmYjVkODU3ODJmYWFiYTNiMTdlMDBjOSIsIm5iZiI6MTcyODkzMDYxOS42MjQ1MjksInN1YiI6IjY3MGQ1ZmVjMGI4MDA1MzdkNzVjOGVmZSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.BS2L6fQvcbzkdsfW0f6i0fT7J25bVE-wJfevJkyQqDg";
+  "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJkYTFjMDhjYzBmYjVkODU3ODJmYWFiYTNiMTdlMDBjOSIsIm5iZiI6MTcyOTMyNzExOC4wOTM2NTcsInN1YiI6IjY3MGQ1ZmVjMGI4MDA1MzdkNzVjOGVmZSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.__nH3j87GSZxk9lJsEpUzhSs5FMQ3HoKkXZ-2-8SgKY";
 
-axios.defaults.baseURL =
-  "https://api.themoviedb.org/3/search/movie?include_adult=false&language=en-US&page=1";
+axios.defaults.baseURL = "https://api.themoviedb.org/3";
 axios.defaults.headers = {
   Authorization: `Bearer ${ACCESS_KEY}`,
   accept: "application/json",
