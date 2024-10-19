@@ -17,15 +17,15 @@ const HomePage = () => {
       setIsError(false);
 
       try {
-        const { result } = await fetchTrendMovies();
-        setMovies(result);
+        const { results } = await fetchTrendMovies();
+        setMovies(results);
       } catch (error) {
         setIsError(true);
       } finally {
         setIsLoading(false);
       }
-      handleTrendMovies();
     };
+    handleTrendMovies();
   }, []);
 
   return (
