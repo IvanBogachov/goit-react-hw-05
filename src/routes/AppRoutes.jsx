@@ -20,7 +20,7 @@ const AppRoutes = () => (
       <Route path="/movies" element={<MoviesPage />} />
       <Route path="/movies/:movieId" element={<MovieDetailsPage />}>
         <Route path="cast" element={<Cast />} />
-        <Route path="revies" element={<Reviews />} />
+        <Route path="reviews" element={<Reviews />} />
       </Route>
       <Route path="*" element={<NotFoundPage />} />
     </Routes>
