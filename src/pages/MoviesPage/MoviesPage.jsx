@@ -23,7 +23,6 @@ const MoviePage = () => {
       setIsLoading(true);
       setIsError(false);
       setMovies(null);
-      setSearch("");
 
       try {
         const { results } = await fetchSearchMovie(queryValue);
@@ -39,8 +38,10 @@ const MoviePage = () => {
   const handleChange = (searchValue) => {
     setSearch(searchValue);
   };
-  const handleSearchMovie = (query) => {
-    setSearchParams(query);
+  const handleSearchMovie = (event) => {
+    if (search.trim() !== "") {
+      setSearchParams({ query: search.trim() });
+    }
   };
 
   return (

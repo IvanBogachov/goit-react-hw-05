@@ -6,9 +6,9 @@ import ErrorMessage from "/src/components/ErrorMessage/ErrorMessage.jsx";
 import Loader from "/src/components/Loader/Loader";
 import CastCard from "/src/components/CastCard/CastCard";
 import NoFoundMessage from "/src/components/NoFoundMessage/NoFoundMessage";
-import styles from "./Cast.module.css";
+import styles from "./MovieCast.module.css";
 
-const Cast = () => {
+const MovieCast = () => {
   const { movieId } = useParams();
   const [cast, setCast] = useState(null);
   const [isLoading, setIsLoadind] = useState(false);
@@ -57,4 +57,4 @@ const Cast = () => {
   );
 };
 
-export default Cast;
+export default MovieCast;

@@ -7,9 +7,9 @@ import ErrorMessage from "/src/components/ErrorMessage/ErrorMessage";
 import ReviewCard from "/src/components/ReviewCard/ReviewCard";
 import NoFoundMessage from "/src/components/NoFoundMessage/NoFoundMessage";
 
-import styles from "./Reviews.module.css";
+import styles from "./MovieReviews.module.css";
 
-const Reviews = () => {
+const MovieReviews = () => {
   const { movieId } = useParams();
   const [reviews, setReviews] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
@@ -48,4 +48,4 @@ const Reviews = () => {
   );
 };
 
-export default Reviews;
+export default MovieReviews;
